@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "gr.nugetpackagepublisher": {
+      "version": "0.2.46",
+      "commands": [
+        "nuget-package-publisher"
+      ]
+    }
+  }
+}

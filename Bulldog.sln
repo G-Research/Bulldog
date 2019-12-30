@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulldog", "src\Bulldog\Bulldog.csproj", "{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7FE53241-319E-4D0F-A415-51D73FDDFCCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3ED576F4-205E-464A-BFBB-AE9019D23DA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTool", "tests\TestTool\TestTool.csproj", "{0789F509-31A8-4ACB-B614-C25A869E9625}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E20C6B4-C541-4AB6-9DFA-55125A930D85}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+		Bulldog.ico = Bulldog.ico
+		Bulldog.png = Bulldog.png
+		Bulldog.proj = Bulldog.proj
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		NonTestProject.targets = NonTestProject.targets
+		Nuget.config = Nuget.config
+		publish.cmd = publish.cmd
+		README.md = README.md
+		version.json = version.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|x64.Build.0 = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Debug|x86.Build.0 = Debug|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|x64.ActiveCfg = Release|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|x64.Build.0 = Release|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|x86.ActiveCfg = Release|Any CPU
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}.Release|x86.Build.0 = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|x64.Build.0 = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Debug|x86.Build.0 = Debug|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x64.ActiveCfg = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x64.Build.0 = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x86.ActiveCfg = Release|Any CPU
+		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A} = {7FE53241-319E-4D0F-A415-51D73FDDFCCE}
+		{0789F509-31A8-4ACB-B614-C25A869E9625} = {3ED576F4-205E-464A-BFBB-AE9019D23DA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5262BCB2-0660-4A57-B2BE-522C9E21EB4B}
+	EndGlobalSection
+EndGlobal

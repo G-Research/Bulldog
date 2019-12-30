@@ -1,0 +1,21 @@
+﻿<Project>
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <Features>pdb-path-determinism</Features>
+    <PathMap>$(MSBuildThisFileDirectory)=E:\code\Bulldog</PathMap>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artefacts</PackageOutputPath>
+    <ApplicationIcon>$(MSBuildThisFileDirectory)Bulldog.ico</ApplicationIcon>
+    <DestinationNuGetRepo>gr-dev-extractor-nuget</DestinationNuGetRepo>
+    <PackageIcon>Bulldog.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Bulldog.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Use GitVersioning for nuget packages -->
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.107" PrivateAssets="All" />
+    <PackageReference Include="SourceLink.Embed.AllSourceFiles" Version="2.8.3" PrivateAssets="All" />
+    <!-- Ensures pdbs and xmls of dependency assemblies make it into build and publish output folders -->
+    <PackageReference Include="GR.MSBuild.CopyDependencyDebugData" Version="1.3.55" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
