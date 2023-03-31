@@ -176,7 +176,7 @@ namespace Bulldog
 
             services.AddLogging(l => l.AddSerilog());
 
-            services.AddTransient(sp=> sp.GetService<ILoggerFactory>().CreateLogger("Default"));
+            services.AddTransient(sp => sp.GetService<ILoggerFactory>().CreateLogger("Default"));
 
             ConfigureServices(services, options);
 
