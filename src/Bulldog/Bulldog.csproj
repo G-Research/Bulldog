@@ -5,7 +5,18 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageId>GR.Bulldog</PackageId>
+    <PackageId>Bulldog</PackageId>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <PackageReleaseNotes>https://github.com/G-Research/Bulldog/blob/main/CHANGELOG.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/G-Research/Bulldog</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <Authors>G-Research</Authors>
+    <Copyright>Copyright 2020-$([System.DateTime]::Now.ToString('yyyy')) G-Research Limited</Copyright>
+    <AssemblyTitle>Bulldog</AssemblyTitle>
+    <AssemblyProduct>Bulldog</AssemblyProduct>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +25,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
-    <PackageReference Include="HiddenWindow" Version="0.1.2" />
+    <PackageReference Include="HiddenWindow" Version="0.2.5" />
   </ItemGroup>
 </Project>
