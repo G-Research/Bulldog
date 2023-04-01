@@ -84,7 +84,7 @@ class Build : NukeBuild
             var settings = new DotNetRunSettings()
                 .SetProjectFile(Solution.Parent / "tests" / "TestTool" / "TestTool.csproj")
                 .SetConfiguration(Configuration)
-                .SetFramework("net6.0")
+                .SetFramework("net7.0")
                 .SetNoBuild(true)
                 .SetApplicationArguments("--verbosity Debug");
 
