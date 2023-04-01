@@ -30,12 +30,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup .NET SDK v6.0.x
+      - name: Setup .NET SDK v7.0.x
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.x
-      - name: Build
-        run: dotnet build --configuration=Release
+          dotnet-version: 7.0.x
+      - name: Run './build.cmd FullBuild'
+        run: ./build.cmd FullBuild
   
   package:
     runs-on: windows-latest
@@ -45,12 +45,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Setup .NET SDK v6.0.x
+      - name: Setup .NET SDK v7.0.x
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 6.0.x
-      - name: Build and package
-        run: dotnet build --configuration=Release
+          dotnet-version: 7.0.x
+      - name: Run './build.cmd FullBuild'
+        run: ./build.cmd FullBuild
       - name: Upload NuGet package artifacts
         uses: actions/upload-artifact@v3
         with:
