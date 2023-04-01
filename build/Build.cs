@@ -22,10 +22,10 @@ class Build : NukeBuild
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
     [Parameter]
-    public AbsolutePath Solution {  get; set; }
-    public static int Main () => Execute<Build>(x => x.FullBuild);
+    public AbsolutePath Solution { get; set; }
+    public static int Main() => Execute<Build>(x => x.FullBuild);
 
-    Target FullBuild => _ => _  .DependsOn(Clean, Restore, Test, Compile, SmokeTest);
+    Target FullBuild => _ => _.DependsOn(Clean, Restore, Test, Compile, SmokeTest);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
