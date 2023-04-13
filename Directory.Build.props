@@ -5,6 +5,7 @@
     <PathMap>$(MSBuildThisFileDirectory)=E:\code\Bulldog</PathMap>
     <PackageOutputPath>$(MSBuildThisFileDirectory)artefacts</PackageOutputPath>
     <ApplicationIcon>$(MSBuildThisFileDirectory)Bulldog.ico</ApplicationIcon>
+    <NoWarn>NETSDK1138</NoWarn>
     <PackageIcon>Bulldog.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>

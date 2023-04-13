@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulldog", "src\Bulldog\Bulldog.csproj", "{14A4AD0C-6AFC-4F7C-83F4-946AA974D60A}"
 EndProject
@@ -21,9 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.targets = Directory.Build.targets
 		NonTestProject.targets = NonTestProject.targets
 		Nuget.config = Nuget.config
-		publish.cmd = publish.cmd
 		README.md = README.md
 		version.json = version.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Build", "build\Build.csproj", "{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3681033B-DA8F-4172-B242-82D932720F7F}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yaml = .github\workflows\ci.yaml
 	EndProjectSection
 EndProject
 Global
@@ -60,6 +66,16 @@ Global
 		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x64.Build.0 = Release|Any CPU
 		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x86.ActiveCfg = Release|Any CPU
 		{0789F509-31A8-4ACB-B614-C25A869E9625}.Release|x86.Build.0 = Release|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Debug|x64.Build.0 = Debug|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Debug|x86.Build.0 = Debug|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Release|x64.ActiveCfg = Release|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Release|x64.Build.0 = Release|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Release|x86.ActiveCfg = Release|Any CPU
+		{8734B16A-A3B7-4AAB-8352-A6A1B66ECED4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

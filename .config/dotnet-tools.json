@@ -1,12 +1,12 @@
 {
-  "version": 1,
-  "isRoot": true,
-  "tools": {
-    "gr.nugetpackagepublisher": {
-      "version": "0.2.46",
-      "commands": [
-        "nuget-package-publisher"
-      ]
+    "version": 1,
+    "isRoot": true,
+    "tools": {
+      "dotnet-format": {
+        "version": "5.1.250801",
+        "commands": [
+          "dotnet-format"
+        ]
+      }
     }
   }
-}
