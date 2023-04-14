@@ -1,6 +1,6 @@
 # Bulldog
 
-[![NuGet Version](https://img.shields.io/nuget/v/GR.Bulldog.svg)](https://www.nuget.org/packages/GR.Bulldog)
+[![NuGet Version](https://img.shields.io/nuget/v/Bulldog.svg)](https://www.nuget.org/packages/Bulldog)
 
 <img src="./Bulldog.png" width="300px" />
 
