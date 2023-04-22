@@ -44,6 +44,21 @@ jobs:
           name: nuget-packages
           path: artefacts/*.nupkg
 
+  Bulldog-Linux:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.id != github.event.pull_request.base.repo.id
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup .NET SDK v7.0.x
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
+      - name: Run './build.cmd FullBuild'
+        run: ./build.cmd FullBuild
+  
   # Publish NuGet packages when a tag is pushed.
   # Build needs to succeed first, including having a tag name that matches the version number.
   publish-release:
