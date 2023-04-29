@@ -183,7 +183,7 @@ namespace Bulldog
             var serviceProvider = services.BuildServiceProvider(new ServiceProviderOptions() { ValidateOnBuild = true, ValidateScopes = true });
             return serviceProvider;
         }
-        
+
         protected virtual LoggerConfiguration WithLoggerConfiguration(LoggerConfiguration loggerConfiguration)
         {
             return loggerConfiguration;
@@ -196,7 +196,7 @@ namespace Bulldog
                 .Enrich.With(new ThreadIdEnricher())
                 .Enrich.FromLogContext()
                 .WriteTo.Console(standardErrorFromLevel: LogEventLevel.Error, outputTemplate: SerilogOutputTemplate);
-               
+
             Log.Logger = WithLoggerConfiguration(loggerConfiguration).CreateLogger();
         }
     }
