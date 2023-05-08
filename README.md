@@ -27,7 +27,7 @@ Tests will be run as part of `FullBuild` target. To run them explicitly use:
 
 Or unit tests and:
 
-```build.cmd SmmokeTest```
+```build.cmd SmokeTest```
 
 For the smoke tests.
 
@@ -46,7 +46,7 @@ The smoke test builds and runs an example [tool](tests/TestTool) which can be us
 
 Removes the boiler plate setup when writing command line tooling to allow you to focus on the important logic. 
 
-It is opinionated enought to enforce some standardisation but with some extension points to avoid being too restrictive.
+It is opinionated enough to enforce some standardisation but with some extension points to avoid being too restrictive.
 
 ## Versioning
 
