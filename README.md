@@ -8,7 +8,7 @@ An opinionated base library for building dotnet command line tools
 
 ## Prerequisites
 
-* Net 7.0 Sdk
+* .NET 7.0 SDK
 * nuke global tool
 
 ## Build the solution.
