@@ -70,7 +70,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: nuget-packages
-          path: artefacts
+      - name: Publish to GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "artefacts/"
+          name: "bulldog-${{ github.ref_name }}"
       - name: Publish to NuGet
         run: |
           if ("${{ github.ref }}" -like "refs/tags/v*") {
