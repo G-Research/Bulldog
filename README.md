@@ -52,3 +52,6 @@ It is opinionated enough to enforce some standardisation but with some extension
 
 Versioned using NerdBank.GitVersioning
 
+## Security
+
+Please see our [security policy](https://github.com/G-Research/Bulldog/blob/main/SECURITY.md) for details on reporting security vulnerabilities.
