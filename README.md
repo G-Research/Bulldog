@@ -4,54 +4,105 @@
 
 <img src="./Bulldog.png" width="300px" />
 
-An opinionated base library for building dotnet command line tools
+## Overview
+
+Bulldog is an opinionated base library for building .NET command line tools. It provides a robust foundation that handles common concerns in CLI tool development, allowing developers to focus on implementing their core business logic rather than boilerplate setup.
+
+## Features
+
+- **Logging Integration**: Built-in Serilog configuration for structured logging
+- **Dependency Injection**: Automatic DI container setup and configuration
+- **Cancellation Handling**: Graceful handling of cancellation tokens and signals
+- **Command Line Parsing**: Integration with CommandLineParser library for robust argument handling
+- **Standardized Structure**: Enforces best practices while maintaining flexibility
+- **Extensible Design**: Provides extension points for customization
 
 ## Prerequisites
 
 * .NET 7.0 SDK
 * nuke global tool
 
-## Build the solution.
+## Installation
 
-```dotnet build Bulldog.sln```
+Add the Bulldog package to your project:
+
+```bash
+dotnet add package Bulldog
+```
+
+## Quick Start
+
+1. Create a new .NET project
+2. Add the Bulldog package
+3. Inherit from `ToolBase` in your main program class
+4. Implement your tool's logic
+
+Example:
+
+```csharp
+public class MyTool : ToolBase
+{
+    protected override async Task<int> RunAsync(CancellationToken cancellationToken)
+    {
+        // Your tool's logic here
+        return 0;
+    }
+}
+```
+
+## Building from Source
 
 This project builds with [Nuke](https://nuke.build/).
 
-To run the build call `build.cmd` which runs the FullBuild target of the nuke build [project](build/Build.csproj) (The same target that is run as part of CI)
+To build the solution:
+```bash
+dotnet build Bulldog.sln
+```
+
+To run the build:
+```bash
+build.cmd
+```
+This runs the FullBuild target of the nuke build [project](build/Build.csproj) (The same target that is run as part of CI)
 
 ### Testing
 
-Tests will be run as part of `FullBuild` target. To run them explicitly use:
+Tests will be run as part of `FullBuild` target. To run them explicitly:
 
-```build.cmd Test```
-
-Or unit tests and:
-
-```build.cmd SmokeTest```
-
-For the smoke tests.
-
-## Usage
-
-To use simply add a package reference to Bulldog package. The package defines a ToolBase class to inherit from which which handles the basics of:
-
-- Logging initialisation with Serilog
-- Dependency Injetion initialisation
-- Cancellation handling
-- CommandLine parsing with CommandlineParser library
+```bash
+build.cmd Test    # For unit tests
+build.cmd SmokeTest    # For smoke tests
+```
 
 The smoke test builds and runs an example [tool](tests/TestTool) which can be used as a reference.
 
-## Why
+## Contributing
 
-Removes the boiler plate setup when writing command line tooling to allow you to focus on the important logic. 
+We welcome contributions! Take a look at the [issues](https://github.com/G-Research/Bulldog/issues) to find something to work on. Make sure you read the [CONTRIBUTING.md](CONTRIBUTING.md) before contributing.
 
-It is opinionated enough to enforce some standardisation but with some extension points to avoid being too restrictive.
+### Development Guidelines
+- Follow the existing code style and conventions
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting PRs
 
-## Versioning
+## Issue Reporting
 
-Versioned using NerdBank.GitVersioning
+If you encounter any issues or have suggestions for improvements:
+
+1. Check the [existing issues](https://github.com/G-Research/Bulldog/issues) to avoid duplicates
+2. Create a new issue with:
+   - A clear description of the problem
+   - Steps to reproduce
+   - Expected behavior
+   - Actual behavior
+   - Environment details (OS, .NET version, etc.)
+   - Any relevant logs or error messages
 
 ## Security
 
-Please see our [security policy](https://github.com/G-Research/Bulldog/blob/main/SECURITY.md) for details on reporting security vulnerabilities.
+Please see our [security policy](SECURITY.md) for details on reporting security vulnerabilities.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
