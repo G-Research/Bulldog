@@ -78,7 +78,7 @@ The smoke test builds and runs an example [tool](tests/TestTool) which can be us
 
 ## Contributing
 
-We welcome contributions! Take a look at the [issues](https://github.com/G-Research/Bulldog/issues) to find something to work on. Make sure you read the [CONTRIBUTING.md](CONTRIBUTING.md) before contributing.
+We welcome contributions! Take a look at the [issues](https://github.com/G-Research/Bulldog/issues) to find something to work on. Please read the [CONTRIBUTING.md](CONTRIBUTING.md) before contributing.
 
 ### Development Guidelines
 - Follow the existing code style and conventions
@@ -105,4 +105,4 @@ Please see our [security policy](SECURITY.md) for details on reporting security 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
