@@ -99,6 +99,14 @@ If you encounter any issues or have suggestions for improvements:
    - Environment details (OS, .NET version, etc.)
    - Any relevant logs or error messages
 
+## Channels
+
+Community engagement is welcome! Please use the following channels:
+- GitHub Issues: For bug reports and feature requests
+- Pull Requests: For code changes and reviews
+- Discussions: For general questions and community engagement
+
+
 ## Security
 
 Please see our [security policy](SECURITY.md) for details on reporting security vulnerabilities.
