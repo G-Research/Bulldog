@@ -86,19 +86,6 @@ We welcome contributions! Take a look at the [issues](https://github.com/G-Resea
 - Update documentation as needed
 - Ensure all tests pass before submitting PRs
 
-## Issue Reporting
-
-If you encounter any issues or have suggestions for improvements:
-
-1. Check the [existing issues](https://github.com/G-Research/Bulldog/issues) to avoid duplicates
-2. Create a new issue with:
-   - A clear description of the problem
-   - Steps to reproduce
-   - Expected behavior
-   - Actual behavior
-   - Environment details (OS, .NET version, etc.)
-   - Any relevant logs or error messages
-
 ## Channels
 
 Community engagement is welcome! Please use the following channels:
