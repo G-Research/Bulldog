@@ -72,7 +72,7 @@ Please create a pull request on the [pull request tracker](https://github.com/G-
 - Run all tests before submitting
 - Run `dotnet format` to ensure code is properly formatted
 
-## Community involvement
+## Community Involvement
 
 We welcome all forms of community participation! Here's how you can get involved:
 
@@ -82,11 +82,6 @@ Improve documentation
 - Share your experience using Tack
 - Help answer questions from other users
 - Participate in feature planning and design discussions
-
-Channels
-- GitHub Issues: For bug reports and feature requests
-- Pull Requests: For code changes and reviews
-- Discussions: For general questions and community engagement
 
 ## License
 
