@@ -67,7 +67,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Download NuGet package artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: nuget-packages
       - name: Publish to GitHub release
